@@ -1,0 +1,8 @@
+spring:
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+
+app:
+  window-seconds-size: ${APP_RATE_LIMIT_WINDOW_SECONDS_SIZE:10}
+  max-rate: ${APP_RATE_LIMIT_MAX_RATE:3}
